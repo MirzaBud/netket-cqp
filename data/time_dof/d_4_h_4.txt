@@ -1,0 +1,48 @@
+===================
+Energy and params
+==================
+Exact benchmark: E0=-6.10938056, E0/L=-0.38183629
+{
+  "L": 16,
+  "J1": 1.0,
+  "J2_ratio": 0.4,
+  "J2": 0.4,
+  "b": 4,
+  "d": 4,
+  "h": 4,
+  "n_layers": 2,
+  "d_ff": 64,
+  "rbm_hidden": 32,
+  "amp_init_std": 0.05,
+  "phase_init_std": 0.1,
+  "symmetrize": false,
+  "marshall_sign": false,
+  "hamiltonian_sign_rule": false,
+  "n_chains": 1024,
+  "burn_in": 120,
+  "thin": 20,
+  "max_steps": 300,
+  "lr": 0.008,
+  "diag_shift": 0.01,
+  "sr_batch_size": 8192,
+  "DOF": 1636, 
+"comp_time": "44m 2s",
+"E_vit": -0.31854747
+}
+
+
+===================================================
+dof + computaitonal time + energy predicted by ViT
+===================================================
+real DOF: 1636
+parameter norm: 8.93929901973156
+RBM kernel dtype: complex128
+initial sampler state: (1024, 16)
+
+step 0298 | E=-5.09675959 | E/L=-0.31854747 | ImE=9.985e-04 +/- 2.566e-01 | delta=5.200e+00
+
+44m 2.1s
+
+"DOF": 1636, 
+"comp_time": "44m 2s",
+"E_vit": -0.31854747

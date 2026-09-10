@@ -1,0 +1,55 @@
+
+====================================
+Parameters and Energy No sign rule
+====================================
+
+Exact benchmark: E0=-6.10938056, E0/L=-0.38183629
+{
+  "L": 16,
+  "J1": 1.0,
+  "J2_ratio": 0.4,
+  "J2": 0.4,
+  "b": 2,
+  "d": 8,
+  "h": 2,
+  "n_layers": 2,
+  "d_ff": 32,
+  "rbm_hidden": 32,
+  "amp_init_std": 0.05,
+  "phase_init_std": 0.1,
+  "symmetrize": false,
+  "marshall_sign": false,
+  "hamiltonian_sign_rule": false,
+  "n_chains": 1024,
+  "burn_in": 120,
+  "thin": 20,
+  "max_steps": 500,
+  "lr": 0.008,
+  "diag_shift": 0.01,
+  "sr_batch_size": 8192,
+  "DOF": 2072, 
+"comp_time": "208m 10s",
+"E_vit": -0.37560774
+}
+
+======================
+Parameters and Energy
+======================
+real DOF: 2072
+parameter norm: 11.67110099429091
+RBM kernel dtype: complex128
+initial sampler state: (1024, 16)
+
+
+
+============================
+Energy and cpc time
+============================
+step 0344 | E=-6.00972384 | E/L=-0.37560774 | ImE=-6.885e-05 +/- 5.823e-03 | delta=7.558e-03
+208m 10.2s
+
+
+
+
+
+

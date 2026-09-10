@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "NetKet CQP: JAX variational Monte Carlo for J1-J2 spin chains"
+version: 0.1.0
+date-released: 2026-09-10
+authors:
+  - family-names: Mirza
+license: MIT

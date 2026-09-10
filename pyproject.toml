@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netket-cqp"
+version = "0.1.0"
+description = "JAX and NetKet-style variational Monte Carlo experiments for one-dimensional J1-J2 spin chains."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = { file = "LICENSE" }
+authors = [{ name = "Mirza" }]
+dependencies = [
+  "jax>=0.4",
+  "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.8", "pandas>=2.0", "jupyterlab>=4.0"]
+netket = ["flax>=0.8", "netket>=3.12", "optax>=0.2"]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.setuptools.packages.find]
+where = ["src"]

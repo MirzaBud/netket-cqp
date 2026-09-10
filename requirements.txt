@@ -1,0 +1,5 @@
+# Core package plus notebooks and tests
+-e .[analysis,dev]
+
+# Optional NetKet/Flax path:
+# pip install -e ".[analysis,dev,netket]"

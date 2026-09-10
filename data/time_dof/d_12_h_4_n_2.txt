@@ -1,0 +1,38 @@
+=======
+dof
+=======
+
+Exact benchmark: E0=-6.10938056, E0/L=-0.38183629
+{
+  "L": 16,
+  "J1": 1.0,
+  "J2_ratio": 0.4,
+  "J2": 0.4,
+  "b": 4,
+  "d": 12,
+  "h": 4,
+  "n_layers": 2,
+  "d_ff": 64,
+  "rbm_hidden": 32,
+  "amp_init_std": 0.05,
+  "phase_init_std": 0.1,
+  "symmetrize": false,
+  "marshall_sign": false,
+  "hamiltonian_sign_rule": false,
+  "n_chains": 1024,
+  "burn_in": 120,
+  "thin": 20,
+  "max_steps": 300,
+  "lr": 0.008,
+  "diag_shift": 0.01,
+  "sr_batch_size": 8192
+}
+
+66m 24.6s
+
+step 0295 | E=-6.07672764 | E/L=-0.37979548 | ImE=-9.227e-04 +/- 1.919e-01 | delta=1.141e+00
+
+real DOF: 4844
+parameter norm: 14.428804894259539
+RBM kernel dtype: complex128
+initial sampler state: (1024, 16)
