@@ -18,7 +18,7 @@ def test_vit_returns_one_complex_log_amplitude_per_configuration():
 
 
 def test_j1j2_local_energy_for_constant_wavefunction():
-    def constant_model(_params, configs):
+    def constant_model(configs):
         return jnp.zeros(configs.shape[0], dtype=jnp.complex64)
 
     hamiltonian = J1J2Hamiltonian(L=4, J1=1.0, J2=0.0)
@@ -32,7 +32,7 @@ def test_j1j2_local_energy_for_constant_wavefunction():
 
 
 def test_jitted_local_energy_matches_eager_calculation():
-    def constant_model(_params, configs):
+    def constant_model(configs):
         return jnp.zeros(configs.shape[0], dtype=jnp.complex64)
 
     hamiltonian = J1J2Hamiltonian(L=4)
